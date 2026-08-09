@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <title>contacts</title>
+  </head>
+  <body>
+    <h1>HK-47</h1>
+    <h3>from the old rebublic</h3>
+    <p>
+      Не канон для фільмів, але культовий персонаж ігор. HK-47 називав людей
+      «м’ясними мішками» та став улюбленцем геймерів завдяки своїм саркастичним
+      реплікам.
+    </p>
+    <ul>
+      <li><a href="../index.html"> головна </a></li>
+      <li><a href="about.html"> about/R2-D2 </a></li>
+      <li><a href="articles.html"> articles/C-3PO </a></li>
+      <li><a href="contacts.html"> contacts/HK-47 </a></li>
+      <li><a href="gallery.html"> gallery/BB-8 </a></li>
+      <li><a href="siths.html"> siths/B1 </a></li>
+    </ul>
+    <a href="siths.html#sitths">Кайло Рен (Kylo Ren)</a>
+
+    <!--данні з полів вводу відпраляються на сервер за адресов а автрибуті action-->
+    <form action="/submit-form" method="post">
+      <!-- адреса вказана в акшн зазвичай веде до скрипта або серверного апі що обробляє ці данні-->
+      <fieldset>
+        <legend>Особисті данні</legend>
+
+        <div>
+          <label for="name">Ім'я:</label>
+          <input type="text" id="name" name="name" />
+        </div>
+
+        <div>
+          <label for="phone">Номер комутатору:</label> <br />
+          <small>формат: 1234567890</small> <br />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{10}"
+            required
+          />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Вибір курсу</legend>
+
+        <div>
+          <label for="course">Курс:</label>
+
+          <select id="course" name="course">
+            <option value="html">ситх</option>
+            <option value="css">джедай</option>
+            <option value="js">дроїд</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <input type="submit" value="Надіслати" />
+    </form>
+  </body>
+</html>
